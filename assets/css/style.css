@@ -265,6 +265,7 @@
 }
 
 .circle-center {
+    /* position: relative; */
     width: 6rem;
     height: 6rem;
     background-color: var(--white-color);
@@ -276,6 +277,22 @@
     font-size: 2.4rem;
 }
 
+.fa-center {
+    position: relative;
+}
+
+.fa-center::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    /* background-color: palevioletred; */
+}
+
 .container-icon-fa-circle .fa-lightbulb:hover {
     color: var(--yellow-color);
 }
@@ -284,6 +301,7 @@
     border: 1px solid var(--yellow-color);
     box-shadow: 0px 4px 6px 0px #88888867;
 }
+
 
 .container-main-center-img {
     height: 100%;
@@ -325,6 +343,21 @@
 .container-icon-fa-circle .fa-book {
     color: var(--iconbrown-color);
     font-size: 2.4rem;
+}
+.fa-book {
+    position: relative;
+}
+
+.fa-book::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    /* background-color: palevioletred; */
 }
 
 .container-icon-fa-circle .fa-book:hover {
@@ -414,6 +447,23 @@
 
 .bottom-icon-fa-circle:hover {
     background-color: var(--darkblue2-color);
+    cursor: pointer;
+}
+
+.fa-icon-btn {
+    position: relative;
+}
+
+.fa-icon-btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    /* background-color: palevioletred; */
 }
 
 .bottom-icon-fa-circle .fa-icon-btn:hover {
