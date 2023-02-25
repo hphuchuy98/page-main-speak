@@ -3,15 +3,19 @@
     --black-color: #000;
     --orange-color: #ff9900;
     --yellow-color: #ffd500;
+    --blue-book-color: #046c86;
+    --blue-hover-color: #446aae;
     --blue-main-color: #328ce7;
     --iconblue-color: #98cefd;
+    --borderblue-color: #cde4fa;
     --lightblue-color: #f0f2fb;
     --darkblue-color: #6a7993;
+    --darkblue2-color: #0078d4;
     --iconbrown-color: #85785f;
     --background-color: #204147;
     --text-color: #333;
     --green-color: #0b7a2e;
-    --gray-color: rgb(192, 192, 192);
+    --gray-color: #e6e6e6;
     /* --gray-color: #f0f2fb; */
 }
 
