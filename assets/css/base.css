@@ -129,7 +129,9 @@ html {
     
         --bottom-main-left-width: 35%;
         --bottom-main-right-width: 35%;
-        --bottom-main-center-width: calc(100% - (var(--bottom-main-left-width) + var(--bottom-main-right-width)));
+        /* --bottom-main-center-width: calc(100% - (var(--bottom-main-left-width) + var(--bottom-main-right-width))); */
+        --bottom-main-center-width: 30%
+        
     }
 
     .text-title {
@@ -163,7 +165,8 @@ html {
     
         --bottom-main-left-width: 35%;
         --bottom-main-right-width: 35%;
-        --bottom-main-center-width: calc(100% - (var(--bottom-main-left-width) + var(--bottom-main-right-width)));
+        /* --bottom-main-center-width: calc(100% - (var(--bottom-main-left-width) + var(--bottom-main-right-width))); */
+        --bottom-main-center-width: 30%
     }
 
     .text-title {
