@@ -1,3 +1,4 @@
+/* phone */
 @media screen and (max-width:380px) {
     .header {
         padding: 5px 10px !important;
@@ -14,6 +15,52 @@
 
     .container-img-center {
         width: 100% !important;
+    }
+
+    .circle-center {
+        width: 5rem !important;
+        height: 5rem !important;
+    }
+
+    .container-icon-fa-circle .fa-center {
+        font-size: 2.1rem !important;
+    }
+
+    .container-icon-text p {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* iphone 8plus */
+@media (min-width:381px) and (max-width:414px) {
+    .header {
+        padding: 5px 10px !important;
+    }
+
+    .container {
+        padding: 2px 5px !important;
+    }
+
+    .header-right p {
+        font-size: 1.4rem !important;
+        padding: 28px 0 0 0 !important;
+    }
+
+    .container-img-center {
+        width: 100% !important;
+    }
+
+    .circle-center {
+        width: 5rem !important;
+        height: 5rem !important;
+    }
+
+    .container-icon-fa-circle .fa-center {
+        font-size: 2.1rem !important;
+    }
+
+    .container-icon-text p {
+        font-size: 1.2rem !important;
     }
 }
 
@@ -212,7 +259,7 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    display: none;
+    /* display: none; */
 }
 
 .container-icon:hover .container-tooltip {
@@ -224,20 +271,20 @@
 .container-tooltip::before {
     position: absolute;
     content: "";
-    /* height: 15px;
+    height: 15px;
     width: 15px;
     background-color: var(--white-color);
-    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1);
+    /* box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1); */
     bottom: -8px;
     left: 50%;
-    transform: translateX(-50%) rotate(45deg); */
+    transform: translateX(-50%) rotate(45deg);
 
-    border-width: 20px 30px;
+    /* border-width: 20px 30px;
     border-style: solid;
     border-color: var(--white-color) transparent transparent transparent;
     bottom: -35px;
     left: auto;
-    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
 }
 
 .container-icon-fa {

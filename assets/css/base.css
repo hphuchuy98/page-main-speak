@@ -61,6 +61,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 5px 10px;
+    overflow: hidden;
 }
 
 html {
@@ -69,7 +70,7 @@ html {
     font-size: 62.5%;  /* 10px (100% = 16px) */
     line-height: 1.6rem;
     font-family: 'Times New Roman', Times, serif; 
-
+    overflow: hidden;
 }
 
 .text-number {
@@ -77,6 +78,11 @@ html {
 }
 
 .text-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+}
+
+.text-title__under {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.8rem;
 }
@@ -109,7 +115,7 @@ html {
     :root{
         --container-main-top-height: 16%;
         --container-main-line-height: 4%;
-        --container-main-center-height: 28%;
+        --container-main-center-height: 32%;
         --container-main-book-height: 14%;
         --container-main-vocabulary-height: calc(100% - (var(--container-main-top-height) + var(--container-main-line-height) + var(--container-main-center-height) + var(--container-main-book-height)));
 
@@ -124,4 +130,35 @@ html {
         font-size: 1.4rem;
     }
 
+    .text-title__under {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (min-width:381px) and (max-width:414px) {
+    :root {
+        --container-main-top-height: 16%;
+        --container-main-line-height: 4%;
+        --container-main-center-height: 32%;
+        --container-main-book-height: 14%;
+        --container-main-vocabulary-height: calc(100% - (var(--container-main-top-height) + var(--container-main-line-height) + var(--container-main-center-height) + var(--container-main-book-height)));
+
+
+        --container-main-top-img-width: 16%;
+        --container-main-top-title-width: 56%;
+        --container-main-top-icon-crown-width: 15%;
+        --container-main-top-icon-star-width: calc(100% - (var(--container-main-top-img-width) + var(--container-main-top-title-width) + var(--container-main-top-icon-crown-width)));
+    }
+
+    .text-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.4rem;
+    }
+
+    .text-title__under {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.3rem;
+    }
 }
