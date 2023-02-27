@@ -127,8 +127,8 @@ html {
         --container-main-top-icon-crown-width: 14%;
         --container-main-top-icon-star-width: calc(100% - (var(--container-main-top-img-width) + var(--container-main-top-title-width) + var(--container-main-top-icon-crown-width)));
     
-        --bottom-main-left-width: 30%;
-        --bottom-main-right-width: 30%;
+        --bottom-main-left-width: 35%;
+        --bottom-main-right-width: 35%;
         --bottom-main-center-width: calc(100% - (var(--bottom-main-left-width) + var(--bottom-main-right-width)));
     }
 
@@ -161,8 +161,8 @@ html {
         --container-main-top-icon-crown-width: 15%;
         --container-main-top-icon-star-width: calc(100% - (var(--container-main-top-img-width) + var(--container-main-top-title-width) + var(--container-main-top-icon-crown-width)));
     
-        --bottom-main-left-width: 30%;
-        --bottom-main-right-width: 30%;
+        --bottom-main-left-width: 35%;
+        --bottom-main-right-width: 35%;
         --bottom-main-center-width: calc(100% - (var(--bottom-main-left-width) + var(--bottom-main-right-width)));
     }
 
