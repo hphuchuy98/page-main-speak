@@ -113,6 +113,9 @@ html {
 
 @media screen and (max-width:380px) {
     :root{
+        --header-left-width: 88%;
+        --header-right-width: calc(100% - var(--header-left-width));
+
         --container-main-top-height: 16%;
         --container-main-line-height: 4%;
         --container-main-center-height: 32%;
@@ -143,6 +146,9 @@ html {
 
 @media (min-width:381px) and (max-width:414px) {
     :root {
+        --header-left-width: 88%;
+        --header-right-width: calc(100% - var(--header-left-width));
+
         --container-main-top-height: 16%;
         --container-main-line-height: 4%;
         --container-main-center-height: 32%;

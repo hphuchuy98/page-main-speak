@@ -10,7 +10,7 @@
 
     .header-right p {
         font-size: 1.4rem !important;
-        padding: 28px 0 0 0 !important;
+        padding: 24px 0 0 0 !important;
     }
 
     .container-img-center {
@@ -51,7 +51,7 @@
 
     .header-right p {
         font-size: 1.4rem !important;
-        padding: 28px 0 0 0 !important;
+        padding: 24px 0 0 0 !important;
     }
 
     .container-img-center {
@@ -294,13 +294,6 @@
     bottom: -8px;
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
-
-    /* border-width: 20px 30px;
-    border-style: solid;
-    border-color: var(--white-color) transparent transparent transparent;
-    bottom: -35px;
-    left: auto;
-    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
 }
 
 .container-icon-fa {
