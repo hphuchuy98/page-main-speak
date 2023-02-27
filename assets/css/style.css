@@ -448,7 +448,7 @@
     box-shadow: 0px 4px 6px 0px #88888867;
 }
 
-.container-icon-fa-circle .fa-bullhorn:hover {
+.container-icon-fa-circle .fa-volume-high:hover {
     color: var( --blue-hover-color);
 }
 
