@@ -43,6 +43,11 @@
     .bottom-ask-tooltip {
         display: none !important;
     }
+
+    .bottom-icon-right {
+        justify-content: right !important;
+    }
+    
 }
 
 /* iphone 8plus */
@@ -89,6 +94,10 @@
     .container-main-vocabulary-tooltip, 
     .bottom-ask-tooltip {
         display: none !important;
+    }
+
+    .bottom-icon-right {
+        justify-content: right !important;
     }
     
 }
