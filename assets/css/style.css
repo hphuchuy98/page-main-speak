@@ -1,7 +1,7 @@
 /* phone */
 @media screen and (max-width:380px) {
     .header {
-        padding: 5px 10px !important;
+        padding: 6px 10px !important;
     }
 
     .container {
@@ -37,12 +37,18 @@
     .bottom-icon-fa-circle {
         margin: 0 4px !important;
     }
+
+    .bottom-tooltip,
+    .container-main-vocabulary-tooltip, 
+    .bottom-ask-tooltip {
+        display: none !important;
+    }
 }
 
 /* iphone 8plus */
 @media (min-width:381px) and (max-width:414px) {
     .header {
-        padding: 5px 10px !important;
+        padding: 6px 10px !important;
     }
 
     .container {
@@ -78,6 +84,13 @@
     .bottom-icon-fa-circle {
         margin: 0 4px !important;
     }
+
+    .bottom-tooltip,
+    .container-main-vocabulary-tooltip, 
+    .bottom-ask-tooltip {
+        display: none !important;
+    }
+    
 }
 
 .wrapper {
@@ -265,7 +278,7 @@
     position: absolute;
     background-color: var(--white-color);
     padding: 10px 18px;
-    top: 0px;
+    top: -20px;
     left: -96px;
     display: flex;
     align-items: center;
@@ -274,7 +287,7 @@
     box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     /* display: none; */
 }
 
@@ -437,6 +450,42 @@
 
 .container-icon-fa-circle .fa-bullhorn:hover {
     color: var( --blue-hover-color);
+}
+
+/* Book */
+.container-main-vocabulary-item {
+    position: relative;
+    z-index: 2;
+}
+
+.container-main-vocabulary-tooltip {
+    font-size: 1.4rem;
+    color: #888888;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    min-width: 600px;
+    min-height: 45px;
+    position: absolute;
+    background-color: var(--white-color);
+    padding: 10px 18px;
+    top: -50px;
+    left: -440%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* display: none; */
+    border: 1px solid #888888;
+}
+
+.container-main-vocabulary-item:hover .container-main-vocabulary-tooltip {
+    top: -34px;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .container-main-book {
@@ -621,7 +670,6 @@
 
 }
 
-
 .fa-icon-btn::after {
     content: "";
     display: block;
@@ -633,5 +681,94 @@
     border-radius: 50%;
     /* background-color: palevioletred; */
 }
+/* ----------------------------------------------------- */
+
+
+/* box home */
+.bottom-icon-item {
+    position: relative;
+    z-index: 2;
+}
+
+.bottom-tooltip {
+    font-size: 1.4rem;
+    color: #888888;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    min-width: 36px;
+    min-height: 45px;
+    position: absolute;
+    background-color: var(--white-color);
+    padding: 10px 18px;
+    top: -20px;
+    left: -6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* display: none; */
+}
+
+.bottom-tooltip::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--white-color);
+    /* box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1); */
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.bottom-icon-item:hover .bottom-tooltip {
+    top: -60px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ----------------------------------------------------- */
+
+
+/* box ask */
+.bottom-box-ask {
+    position: relative;
+    z-index: 2;
+}
+
+.bottom-ask-tooltip {
+    font-size: 1.4rem;
+    color: #888888;
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-sizing: border-box; */
+    min-width: 180px;
+    min-height: 45px;
+    position: absolute;
+    background-color: var(--white-color);
+    padding: 10px 18px;
+    top: -40px;
+    left: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* display: none; */
+    border: 1px solid #888888;
+}
+
+.bottom-box-ask:hover .bottom-ask-tooltip {
+    top: -50px;
+    opacity: 1;
+    pointer-events: auto;
+}
+/* ----------------------------------------------------- */
 
 /* --End Bottom-- */
