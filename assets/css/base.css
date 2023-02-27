@@ -17,6 +17,35 @@
     --green-color: #0b7a2e;
     --gray-color: #e6e6e6;
     /* --gray-color: #f0f2fb; */
+
+
+
+    --header-height: 8%;
+    --container-height: 74%;
+    --bottom-height: calc(100% - (var(--header-height) + var(--container-height)));
+    
+    --header-left-width: 90%;
+    --header-right-width: calc(100% - var(--header-left-width));
+
+    --header-left-top-height: 60%;
+    --header-left-bottom-height: calc(100% - var(--header-left-top-height));
+
+    /* container height */
+    --container-main-top-height: 18%;
+    --container-main-line-height: 6%;
+    --container-main-center-height: 44%;
+    --container-main-book-height: 16%;
+    --container-main-vocabulary-height: calc(100% - (var(--container-main-top-height) + var(--container-main-line-height) + var(--container-main-center-height) + var(--container-main-book-height)));
+
+    --container-main-top-img-width: 12%;
+    --container-main-top-title-width: 72%;
+    --container-main-top-icon-crown-width: 8%;
+    --container-main-top-icon-star-width: calc(100% - (var(--container-main-top-img-width) + var(--container-main-top-title-width) + var(--container-main-top-icon-crown-width)));
+
+    /* bottom width */
+    --bottom-main-left-width: 30%;
+    --bottom-main-right-width: 30%;
+    --bottom-main-center-width: calc(100% - (var(--bottom-main-left-width) + var(--bottom-main-right-width)));
 }
 
 @font-face {
@@ -76,3 +105,23 @@ html {
     text-align: center;
 }
 
+@media screen and (max-width:380px) {
+    :root{
+        --container-main-top-height: 16%;
+        --container-main-line-height: 4%;
+        --container-main-center-height: 28%;
+        --container-main-book-height: 14%;
+        --container-main-vocabulary-height: calc(100% - (var(--container-main-top-height) + var(--container-main-line-height) + var(--container-main-center-height) + var(--container-main-book-height)));
+
+        --container-main-top-img-width: 16%;
+        --container-main-top-title-width: 54%;
+        --container-main-top-icon-crown-width: 14%;
+        --container-main-top-icon-star-width: calc(100% - (var(--container-main-top-img-width) + var(--container-main-top-title-width) + var(--container-main-top-icon-crown-width)));
+    }
+
+    .text-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.4rem;
+    }
+
+}
