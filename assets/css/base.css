@@ -108,7 +108,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 @media screen and (max-width:380px) {
@@ -127,10 +127,9 @@ html {
         --container-main-top-icon-crown-width: 14%;
         --container-main-top-icon-star-width: calc(100% - (var(--container-main-top-img-width) + var(--container-main-top-title-width) + var(--container-main-top-icon-crown-width)));
     
-        --bottom-main-left-width: 35%;
-        --bottom-main-right-width: 35%;
-        /* --bottom-main-center-width: calc(100% - (var(--bottom-main-left-width) + var(--bottom-main-right-width))); */
-        --bottom-main-center-width: 30%
+        --bottom-main-left-width: 25%;
+        --bottom-main-right-width: 25%;
+        --bottom-main-center-width: calc(100% - (var(--bottom-main-left-width) + var(--bottom-main-right-width)));
         
     }
 
@@ -163,10 +162,10 @@ html {
         --container-main-top-icon-crown-width: 15%;
         --container-main-top-icon-star-width: calc(100% - (var(--container-main-top-img-width) + var(--container-main-top-title-width) + var(--container-main-top-icon-crown-width)));
     
-        --bottom-main-left-width: 35%;
-        --bottom-main-right-width: 35%;
-        /* --bottom-main-center-width: calc(100% - (var(--bottom-main-left-width) + var(--bottom-main-right-width))); */
-        --bottom-main-center-width: 30%
+        --bottom-main-left-width: 25%;
+        --bottom-main-right-width: 25%;
+        --bottom-main-center-width: calc(100% - (var(--bottom-main-left-width) + var(--bottom-main-right-width)));
+
     }
 
     .text-title {

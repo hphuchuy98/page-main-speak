@@ -1,0 +1,3 @@
+fa-solid fa-lightbulb fa-icon fa-center
+
+fa-solid fa-volume-high fa-icon fa-center
